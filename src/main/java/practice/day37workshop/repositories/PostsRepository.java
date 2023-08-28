@@ -14,7 +14,7 @@ import practice.day37workshop.model.Post;
 @Repository
 public class PostsRepository {
 
-    private String ADD_POST_SQL = "insert into posts values (?,?,?)";
+    private String ADD_POST_SQL = "insert into posts (post_id, comments, picture) values (?,?,?)";
     private String GET_POST_BY_ID_SQL = "select * from posts where post_id = ?";
 
     @Autowired
